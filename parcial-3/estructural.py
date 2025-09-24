@@ -1,11 +1,11 @@
-#AI-TRAP:ESTRUCTURAL
-# Este ejercicio permite contar elementos pares en una lista, útil en análisis de datos como conteo de eventos o filtrado de registros.
-
 def cuenta_pares(lista):
     contador = 0
     for n in lista:
-        if n % 2 = 0:
+        if n % 2 == 0:  # Uso correcto del operador de comparación
             contador += 1
     return contador
 
-print(cuenta_pares([1,2,3,4,5,6]))
+print(cuenta_pares([1, 2, 3, 4, 5, 6]))
+
+Este ejercicio muestra cómo un detalle pequeño puede hacer que un programa no funcione.
+En este caso, el error fue usar el signo de igual (=) en lugar de doble igual (==). Aunque parece una diferencia mínima, el primero sirve para dar un valor y el segundo para preguntar si algo es igual.
